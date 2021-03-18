@@ -523,6 +523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19c7c9a80537f24e823b59a3de9f401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabPeluru: {fileID: 2792316207659163143, guid: 9679dd79f57578945b00a9026c10564b,
+    type: 3}
 --- !u!1 &1598824691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6107181860861349529, guid: d56fa2caa0604ab4094cb3ce78887607,

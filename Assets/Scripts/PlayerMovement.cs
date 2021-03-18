@@ -8,10 +8,13 @@ public class PlayerMovement : MonoBehaviour
     float batasAtas = 3.50f;
     float batasBawah = -3.00f;
     Vector3 translationVec;
-        
+    public GameObject prefabPeluru;
+    
+
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -32,6 +35,17 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             speed = -0.1f;
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            //Tembak
+            //Buat pelurunya
+            var peluruBaru = Instantiate(prefabPeluru);
+
+            //set awal dan arah dari peluru
+            peluruBaru.GetComponent<BulletMove>().TembakDari(transform.localPosition, translationVec);
+
         }
     }
 }
