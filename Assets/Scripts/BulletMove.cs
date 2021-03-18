@@ -6,10 +6,10 @@ public class BulletMove : MonoBehaviour
 {
     float speed = 0.3f;
     Vector3 translationVec;
-    float BATAS_KANAN = 9f;
-    float BATAS_KIRI = -9f;
-    float BATAS_ATAS = 5f;
-    float BATAS_BAWAH = -5f;
+    float BATAS_KANAN = 10f;
+    //float BATAS_KIRI = -9f;
+    //float BATAS_ATAS = 5f;
+    //float BATAS_BAWAH = -5f;
     public GameObject firePoint;
 
 
@@ -25,8 +25,7 @@ public class BulletMove : MonoBehaviour
         // gerakan peluru sesuai dengan arahnya
         transform.localPosition += translationVec * speed;
 
-        if(transform.localPosition.x > BATAS_KANAN || transform.localPosition.x < BATAS_KIRI || transform.localPosition.y > BATAS_ATAS || 
-            transform.localPosition.y < BATAS_BAWAH)
+        if(transform.localPosition.x > BATAS_KANAN)
         {
             Destroy(this.gameObject);
         }
