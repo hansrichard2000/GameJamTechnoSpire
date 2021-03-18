@@ -135,3 +135,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabPeluru: {fileID: 2792316207659163143, guid: 9679dd79f57578945b00a9026c10564b,
     type: 3}
+  firePoint: {fileID: 0}

@@ -10,7 +10,8 @@ public class BulletMove : MonoBehaviour
     float BATAS_KIRI = -9f;
     float BATAS_ATAS = 5f;
     float BATAS_BAWAH = -5f;
-    
+    public GameObject firePoint;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +32,10 @@ public class BulletMove : MonoBehaviour
         }
     }
 
-    public void TembakDari(Vector3 posAwal, Vector3 direction)
+    public void TembakDari(GameObject posAwal, Vector3 direction)
     {
         //taruh peluru di posisi awal
-        transform.localPosition = new Vector3(posAwal.x, posAwal.y, posAwal.z);
+        transform.localPosition = new Vector3(posAwal.transform.position.x, posAwal.transform.position.y, posAwal.transform.position.z);
 
         //set arah peluru
         translationVec = new Vector3(Mathf.Cos(0), Mathf.Sin(0), 0);
