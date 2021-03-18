@@ -37,6 +37,6 @@ public class BulletMove : MonoBehaviour
         transform.localPosition = new Vector3(posAwal.x, posAwal.y, posAwal.z);
 
         //set arah peluru
-        translationVec = new Vector3(direction.x, direction.y, direction.z);
+        translationVec = new Vector3(Mathf.Cos(0), Mathf.Sin(0), 0);
     }
 }

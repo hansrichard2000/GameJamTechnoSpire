@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 680277524434892661}
   - component: {fileID: 306701269192822499}
   - component: {fileID: 9112961547678023320}
+  - component: {fileID: 5302826047026123417}
   m_Layer: 0
   m_Name: bubble
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: d5861294731c1e94d9787e7da9e6052d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -125,3 +126,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 3, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5302826047026123417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792316207659163143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed382f4652a69be4aae7259c6b54a01c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
