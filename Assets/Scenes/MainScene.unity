@@ -709,8 +709,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: corona_fighter
       objectReference: {fileID: 0}
+    - target: {fileID: 8819725087753618701, guid: 6980d154c587f4342bb2739a101548cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2160249192926526470, guid: 6980d154c587f4342bb2739a101548cc, type: 3}
+    - {fileID: 6387549597828308538, guid: 6980d154c587f4342bb2739a101548cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6980d154c587f4342bb2739a101548cc, type: 3}
 --- !u!1001 &1045119301158744650
 PrefabInstance:

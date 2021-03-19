@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 3734947505797282443}
   - component: {fileID: 2844520319377568571}
   - component: {fileID: -119903804799651078}
+  - component: {fileID: 1633294081855582976}
+  - component: {fileID: 7896831468570223824}
   m_Layer: 0
   m_Name: virus1_fix
-  m_TagString: Untagged
+  m_TagString: Virus1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,3 +99,31 @@ MonoBehaviour:
   virus1: {fileID: 2371663266184598568}
   virus2: {fileID: 425781633112311433, guid: bdfea220f623aa74aa7f80bba294a1f3, type: 3}
   virus3: {fileID: 5321776941587509986, guid: 99dee0300515ad741aaafea03cbe37d6, type: 3}
+--- !u!70 &1633294081855582976
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2371663266184598568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 47.4, y: 27.2}
+  m_Direction: 0
+--- !u!114 &7896831468570223824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2371663266184598568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e46ab1ec95f7c48bb5d14c66a8494c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

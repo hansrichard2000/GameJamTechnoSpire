@@ -39,4 +39,6 @@ public class BulletMove : MonoBehaviour
         //set arah peluru
         translationVec = new Vector3(Mathf.Cos(0), Mathf.Sin(0), 0);
     }
+
+    
 }

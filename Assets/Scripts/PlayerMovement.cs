@@ -19,10 +19,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetKey(KeyCode.UpArrow)){
-                speed = 0.1f;
+                speed = 0.055f;
         }
         
         translationVec = new Vector3(0, 1, 0);
@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
             speed = -0.1f;
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             //Tembak
             //Buat pelurunya

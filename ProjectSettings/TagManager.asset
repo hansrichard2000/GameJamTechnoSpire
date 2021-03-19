@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Virus1
+  - Virus2
+  - Virus3
+  - Bullet
+  - Vbullet
   layers:
   - Default
   - TransparentFX

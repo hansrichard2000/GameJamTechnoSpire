@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 1465961108539588624}
   - component: {fileID: 5637141960121510789}
   - component: {fileID: 9014559138729229090}
+  - component: {fileID: 9130037882199666311}
+  - component: {fileID: -6366939473833431935}
   m_Layer: 0
   m_Name: virus2_fix
-  m_TagString: Untagged
+  m_TagString: Virus2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,3 +114,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabPeluruMonster: {fileID: 206716659127662961, guid: 505cd8003f9d3a64b937f8321ddb8a98,
     type: 3}
+--- !u!70 &9130037882199666311
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425781633112311433}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 49.1, y: 45.3}
+  m_Direction: 0
+--- !u!114 &-6366939473833431935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425781633112311433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e46ab1ec95f7c48bb5d14c66a8494c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

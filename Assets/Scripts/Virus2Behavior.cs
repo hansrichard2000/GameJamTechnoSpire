@@ -6,7 +6,7 @@ public class Virus2Behavior : MonoBehaviour
 {
     private Vector3 translationVec;
     public GameObject prefabPeluruMonster;
-    private float timer = 5f;
+    private float timer = 2f;
 
     // Start is called before the first frame update
     void Start()
