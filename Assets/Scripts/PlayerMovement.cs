@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject prefabPeluru;
     public GameObject firePoint;
     public ScoringSystem scoringSystem;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow)){
                 speed = 0.075f;
+            animator.SetBool("Jump", true);
         }
         
         translationVec = new Vector3(0, 1, 0);
@@ -32,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         if (transform.localPosition.y < batasBawah)
         {
             speed = 0f;
+            animator.SetBool("Jump", false);
         }
         else
         {
