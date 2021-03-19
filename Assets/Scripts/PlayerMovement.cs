@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 translationVec;
     public GameObject prefabPeluru;
     public GameObject firePoint;
-
+    public ScoringSystem scoringSystem;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
             //set awal dan arah dari peluru
             peluruBaru.GetComponent<BulletMove>().TembakDari(firePoint, translationVec);
+            peluruBaru.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
 
         }
     }

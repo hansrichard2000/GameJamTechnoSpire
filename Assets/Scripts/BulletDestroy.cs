@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BulletDestroy : MonoBehaviour
 {
+    public ScoringSystem scoringSystem;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,7 @@ public class BulletDestroy : MonoBehaviour
             explosion.transform.position = this.transform.position;*/
             Destroy(this.gameObject);
             Destroy(collision.collider.gameObject);
+            scoringSystem.AddScore(10);
         }
         if (collision.collider.tag == "Virus2")
         {
@@ -25,6 +28,7 @@ public class BulletDestroy : MonoBehaviour
             explosion.transform.position = this.transform.position;*/
             Destroy(this.gameObject);
             Destroy(collision.collider.gameObject);
+            scoringSystem.AddScore(10);
         }
         if (collision.collider.tag == "Virus3")
         {
@@ -32,6 +36,7 @@ public class BulletDestroy : MonoBehaviour
             explosion.transform.position = this.transform.position;*/
             Destroy(this.gameObject);
             Destroy(collision.collider.gameObject);
+            scoringSystem.AddScore(10);
         }
     }
 }
