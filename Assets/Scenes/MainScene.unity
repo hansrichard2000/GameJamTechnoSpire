@@ -585,9 +585,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virus:
-  - {fileID: 3453852640238021216, guid: 5caddf6e0d72664499f116c9c5b52eaa, type: 3}
-  - {fileID: 643136019099658411, guid: 40f18e217a8897547b6508f2f0505054, type: 3}
-  - {fileID: 2788648413775130794, guid: 8a7e8d18796661343a30ddc0d739c3f5, type: 3}
+  - {fileID: 2371663266184598568, guid: a687f4062133ada4180fab163e8246ca, type: 3}
+  - {fileID: 425781633112311433, guid: bdfea220f623aa74aa7f80bba294a1f3, type: 3}
+  - {fileID: 5321776941587509986, guid: 99dee0300515ad741aaafea03cbe37d6, type: 3}
 --- !u!4 &1933520446
 Transform:
   m_ObjectHideFlags: 0

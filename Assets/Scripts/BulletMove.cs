@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletMove : MonoBehaviour
 {
-    float speed = 0.3f;
+    float speed = 0.5f;
     Vector3 translationVec;
     float BATAS_KANAN = 10f;
     //float BATAS_KIRI = -9f;
@@ -20,7 +20,7 @@ public class BulletMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // gerakan peluru sesuai dengan arahnya
         transform.localPosition += translationVec * speed;

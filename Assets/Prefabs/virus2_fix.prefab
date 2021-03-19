@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7932642535120373449}
   - component: {fileID: 1465961108539588624}
+  - component: {fileID: 5637141960121510789}
   m_Layer: 0
-  m_Name: shooter_1
+  m_Name: virus2_fix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,3 +82,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5637141960121510789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425781633112311433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd748369a62c8741967ad80270d9524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virus1: {fileID: 2371663266184598568, guid: a687f4062133ada4180fab163e8246ca, type: 3}
+  virus2: {fileID: 425781633112311433}
+  virus3: {fileID: 5321776941587509986, guid: 99dee0300515ad741aaafea03cbe37d6, type: 3}
