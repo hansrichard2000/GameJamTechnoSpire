@@ -10,7 +10,7 @@ public class SpawnEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnVirus(1);
+        //spawnPattern(1);
     }
 
     // Update is called once per frame
@@ -18,29 +18,42 @@ public class SpawnEnemy : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            spawnVirus(1);
+            spawnPattern(2);
         }
     }
 
-    void spawnVirus(int pattern)
+    void spawnPattern(int pattern)
     {
+        Vector3 pos;
+
         switch (pattern)
         {
             // random spawn
             case 1:
-                var newVirus1 = Instantiate(virus[0]);
-                newVirus1.transform.position = new Vector3(13, -0.5f, 0);
-                //gerak ke kiri lurus
-                var newVirus2 = Instantiate(virus[1]);
-                newVirus2.transform.position = new Vector3(13, 2.5f, 0);
-                var newVirus3 = Instantiate(virus[2]);
-                newVirus3.transform.position = new Vector3(13, -2.5f, 0);
                 break;
 
             // 2 dan seterusnya buat pattern
             case 2:
-                // code block
+                // spawn virus 1
+                spawnVirus(virus[0], new Vector3(5, 0, 0));
+                spawnVirus(virus[0], new Vector3(6.5f, -1.35f, 0));
+                spawnVirus(virus[0], new Vector3(6.5f, 1.35f, 0));
+                spawnVirus(virus[0], new Vector3(8f, -2.7f, 0));
+                spawnVirus(virus[0], new Vector3(8, 2.7f, 0));
+                // spawn virus 2
+                spawnVirus(virus[1], new Vector3(4.5f, 3.85f, 0));
+                spawnVirus(virus[1], new Vector3(9, 3.85f, 0));
+                spawnVirus(virus[1], new Vector3(4.5f, -3.85f, 0));
+                spawnVirus(virus[1], new Vector3(9, -3.85f, 0));
+                // spawn virus 3
+                spawnVirus(virus[2], new Vector3(9, 0, 0));
                 break;
         }
+    }
+
+    void spawnVirus(GameObject virusType, Vector3 position)
+    {
+        var newVirus1 = Instantiate(virusType);
+        newVirus1.transform.position = position;
     }
 }
