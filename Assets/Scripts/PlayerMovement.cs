@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.UpArrow)){
-                speed = 0.055f;
+                speed = 0.075f;
         }
         
         translationVec = new Vector3(0, 1, 0);
@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            speed = -0.1f;
+            speed = -0.075f;
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
