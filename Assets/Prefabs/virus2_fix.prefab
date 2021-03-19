@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9014559138729229090}
   - component: {fileID: 9130037882199666311}
   - component: {fileID: -6366939473833431935}
+  - component: {fileID: 6634457350584905073}
   m_Layer: 0
   m_Name: virus2_fix
   m_TagString: Virus2
@@ -142,3 +143,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e46ab1ec95f7c48bb5d14c66a8494c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &6634457350584905073
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425781633112311433}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 24797e2c4ad272d49b4b1eed2ac9518f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
