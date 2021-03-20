@@ -203,6 +203,12 @@ PrefabInstance:
       propertyPath: scoringSystem
       value: 
       objectReference: {fileID: 593720367}
+    - target: {fileID: 6264939330687931497, guid: bb333e3472742b442af709cae1425edc,
+        type: 3}
+      propertyPath: prefabPeluru
+      value: 
+      objectReference: {fileID: 4494357546422164402, guid: 2fa6ab6ab16b57942acd25dd6fd215e8,
+        type: 3}
     - target: {fileID: 6264939330687931510, guid: bb333e3472742b442af709cae1425edc,
         type: 3}
       propertyPath: textlife
