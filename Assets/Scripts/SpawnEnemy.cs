@@ -6,6 +6,7 @@ public class SpawnEnemy : MonoBehaviour
 {
     int pattern = 0;
     public GameObject[] virus;
+    public GameObject camera;
 
     // Start is called before the first frame update
     void Start()
@@ -100,7 +101,13 @@ public class SpawnEnemy : MonoBehaviour
 
     void spawnVirus(GameObject virusType, Vector3 position)
     {
-        var newVirus1 = Instantiate(virusType);
-        newVirus1.transform.position = position;
+        //var newVirus1 = Instantiate(virusType);
+        GameObject go = Instantiate(virusType,
+                                    new Vector3(camera.transform.position.x + position.x,
+                                                camera.transform.position.y + position.y,
+                                                camera.transform.position.z + position.z),
+                                    Quaternion.identity) as GameObject;
+        go.transform.parent = GameObject.Find("Main Camera").transform;
+        //newVirus1.transform.position = position;
     }
 }

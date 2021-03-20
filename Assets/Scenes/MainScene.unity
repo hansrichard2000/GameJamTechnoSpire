@@ -1721,6 +1721,7 @@ MonoBehaviour:
   - {fileID: 2371663266184598568, guid: a687f4062133ada4180fab163e8246ca, type: 3}
   - {fileID: 425781633112311433, guid: bdfea220f623aa74aa7f80bba294a1f3, type: 3}
   - {fileID: 5321776941587509986, guid: 99dee0300515ad741aaafea03cbe37d6, type: 3}
+  camera: {fileID: 519420028}
 --- !u!4 &1933520446
 Transform:
   m_ObjectHideFlags: 0
