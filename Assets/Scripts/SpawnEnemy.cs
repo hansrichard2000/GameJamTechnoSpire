@@ -24,6 +24,10 @@ public class SpawnEnemy : MonoBehaviour
         {
             spawnPattern(3);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            spawnPattern(4);
+        }
     }
 
     void spawnPattern(int pattern)
@@ -70,6 +74,25 @@ public class SpawnEnemy : MonoBehaviour
                 spawnVirus(virus[2], new Vector3(3.5f, 0, 0));
                 spawnVirus(virus[2], new Vector3(5f, 3f, 0));
                 spawnVirus(virus[2], new Vector3(5f, -3f, 0));
+                break;
+
+            case 4:
+
+                // spawn virus 1
+                spawnVirus(virus[0], new Vector3(9.5f, 3.75f, 0));
+                spawnVirus(virus[0], new Vector3(9.5f, 1.5f, 0));
+                spawnVirus(virus[0], new Vector3(9.5f, -1f, 0));
+                spawnVirus(virus[0], new Vector3(9.5f, -3.35f, 0));
+                spawnVirus(virus[0], new Vector3(8f, 2.65f, 0));
+                spawnVirus(virus[0], new Vector3(8f, 0.25f, 0));
+                spawnVirus(virus[0], new Vector3(8f, -2.25f, 0));
+                spawnVirus(virus[0], new Vector3(6.5f, 3.75f, 0));
+                spawnVirus(virus[0], new Vector3(6.5f, 1.5f, 0));
+                spawnVirus(virus[0], new Vector3(6.5f, -1f, 0));
+                spawnVirus(virus[0], new Vector3(6.5f, -3.35f, 0));
+                spawnVirus(virus[0], new Vector3(5f, 2.65f, 0));
+                spawnVirus(virus[0], new Vector3(5f, 0.25f, 0));
+                spawnVirus(virus[0], new Vector3(5f, -2.25f, 0));
                 break;
         }
     }
