@@ -60,24 +60,25 @@ public class PlayerShotgun : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            speed = 100f;
             for (int i = 0; i <= 2; i++)
             {
                 var spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
-
+               
                 switch (i)
                 {
                     case 0:
-                        spawnedBullet.AddForce(barrel.up * speed + new Vector3(0f, -90f, 0f));
+                        spawnedBullet.AddForce(barrel.up * speed + new Vector3(300f, -90f, 0f));
                         break;
                     case 1:
-                        spawnedBullet.AddForce(barrel.up * speed + new Vector3(0f, 0f, 0f));
+                        spawnedBullet.AddForce(barrel.up * speed + new Vector3(300f, 0f, 0f));
                         break;
                     case 2:
-                        spawnedBullet.AddForce(barrel.up * speed + new Vector3(0f, 90f, 0f));
+                        spawnedBullet.AddForce(barrel.up * speed + new Vector3(300f, 90f, 0f));
                         break;
                 }
-                /*spawnedBullet.GetComponent<Jarum>().TembakDari(firePoint, translationVec);
-                spawnedBullet.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;*/
+                //spawnedBullet.GetComponent<Jarum>().TembakDari(firePoint, translationVec);
+                spawnedBullet.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
             }
 
             //Tembak
