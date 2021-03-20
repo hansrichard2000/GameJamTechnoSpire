@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerThrower : MonoBehaviour
 {
     float speed;
     float batasAtas = 3.50f;
@@ -24,8 +24,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.UpArrow)){
-                speed = 0.075f;
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            speed = 0.075f;
             animator.SetBool("Jump", true);
         }
         else
@@ -33,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
             //entah kenapa play sama stop nya kebalik, kalau diplay, malah stop
             particleSystem.Play();
         }
-        
+
         translationVec = new Vector3(0, 1, 0);
 
         transform.localPosition += translationVec * speed;
@@ -49,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
             //particleSystem.Stop();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             //Tembak
             //Buat pelurunya
@@ -60,6 +61,5 @@ public class PlayerMovement : MonoBehaviour
             peluruBaru.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
 
         }
-        
     }
 }
