@@ -19,18 +19,18 @@ public class BulletMove : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        // gerakan peluru sesuai dengan arahnya
         transform.localPosition += translationVec * speed;
+    }
 
-        if(transform.localPosition.x > BATAS_KANAN)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "BatasKanan")
         {
             Destroy(this.gameObject);
         }
     }
-
     public void TembakDari(GameObject posAwal, Vector3 direction)
     {
         //taruh peluru di posisi awal
@@ -38,7 +38,8 @@ public class BulletMove : MonoBehaviour
 
         //set arah peluru
         translationVec = new Vector3(Mathf.Cos(0), Mathf.Sin(0), 0);
+        //translationVec = new Vector3(direction.x, direction.y, direction.z);
     }
 
-    
+
 }

@@ -60,5 +60,11 @@ public class PlayerMovement : MonoBehaviour
             peluruBaru.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
 
         }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            translationVec = new Vector3(3, 0, 0);
+            speed = 0.015f;
+            transform.localPosition += translationVec * speed;
+        }
     }
 }

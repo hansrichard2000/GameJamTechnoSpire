@@ -15,7 +15,7 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        translationVec = new Vector3(3, 0, 0);
+        translationVec = new Vector3(-3, 0, 0);
 
         transform.localPosition += translationVec * speed;
     }
