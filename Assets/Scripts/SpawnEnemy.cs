@@ -16,9 +16,13 @@ public class SpawnEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             spawnPattern(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            spawnPattern(3);
         }
     }
 
@@ -47,6 +51,25 @@ public class SpawnEnemy : MonoBehaviour
                 spawnVirus(virus[1], new Vector3(9, -3.85f, 0));
                 // spawn virus 3
                 spawnVirus(virus[2], new Vector3(9, 0, 0));
+                break;
+
+            case 3:
+                // spawn virus 1
+                spawnVirus(virus[0], new Vector3(9.5f, 3f, 0));
+                spawnVirus(virus[0], new Vector3(9.5f, 1.5f, 0));
+                spawnVirus(virus[0], new Vector3(9.5f, -3f, 0));
+                spawnVirus(virus[0], new Vector3(9.5f, -1.5f, 0));
+                // spawn virus 2
+                spawnVirus(virus[1], new Vector3(5.85f, 1f, 0));
+                spawnVirus(virus[1], new Vector3(5.85f, -1f, 0));
+                spawnVirus(virus[1], new Vector3(7.5f, 3.5f, 0));
+                spawnVirus(virus[1], new Vector3(7.5f, -3.5f, 0));
+                spawnVirus(virus[1], new Vector3(8f, 1f, 0));
+                spawnVirus(virus[1], new Vector3(8f, -1f, 0));
+                // spawn virus 3
+                spawnVirus(virus[2], new Vector3(3.5f, 0, 0));
+                spawnVirus(virus[2], new Vector3(5f, 3f, 0));
+                spawnVirus(virus[2], new Vector3(5f, -3f, 0));
                 break;
         }
     }
