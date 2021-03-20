@@ -762,6 +762,11 @@ PrefabInstance:
       propertyPath: textlife
       value: 
       objectReference: {fileID: 212739943}
+    - target: {fileID: 9006748733118742611, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
+        type: 3}
+      propertyPath: scoringSystem
+      value: 
+      objectReference: {fileID: 593720367}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f07104d9dafe2c4e8c5b58e427e9915, type: 3}
 --- !u!1001 &1031540163
