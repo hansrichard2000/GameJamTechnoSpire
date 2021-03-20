@@ -18,7 +18,7 @@ public class VirusCollision : MonoBehaviour
             var explosion = Instantiate(prefabExplosion);
             explosion.transform.position = this.transform.position;
             Destroy(this.gameObject);
-            Destroy(collision.collider.gameObject);
+            print("player Collided");
         }
         if (collision.collider.tag == "Bullet")
         {

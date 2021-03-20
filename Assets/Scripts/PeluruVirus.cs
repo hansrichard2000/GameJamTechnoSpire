@@ -39,7 +39,7 @@ public class PeluruVirus : MonoBehaviour
             /*var explosion = Instantiate(prefabExplosion);
             explosion.transform.position = this.transform.position;*/
             Destroy(this.gameObject);
-            Destroy(collision.collider.gameObject);
+            
         }
         if (collision.collider.tag == "Bullet")
         {
