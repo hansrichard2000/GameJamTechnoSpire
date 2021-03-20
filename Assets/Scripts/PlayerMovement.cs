@@ -12,19 +12,26 @@ public class PlayerMovement : MonoBehaviour
     public GameObject firePoint;
     public ScoringSystem scoringSystem;
     public Animator animator;
+    public ParticleSystem particleSystem;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        particleSystem.Stop();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKey(KeyCode.UpArrow)){
                 speed = 0.075f;
             animator.SetBool("Jump", true);
+        }
+        else
+        {
+            //entah kenapa play sama stop nya kebalik, kalau diplay, malah stop
+            particleSystem.Play();
         }
         
         translationVec = new Vector3(0, 1, 0);
@@ -39,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             speed = -0.075f;
+            //particleSystem.Stop();
         }
 
         if (Input.GetKeyDown(KeyCode.Space))

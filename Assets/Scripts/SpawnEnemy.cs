@@ -16,6 +16,7 @@ public class SpawnEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // untuk sementara, nanti pake random spawn per berapa detik
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             spawnPattern(2);
