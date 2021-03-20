@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class CameraMove : MonoBehaviour
+public class OpeningScene : MonoBehaviour
 {
-    Vector3 translationVec;
-    float speed = 0.020f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,10 +12,13 @@ public class CameraMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        translationVec = new Vector3(3, 0, 0);
+        
+    }
 
-        transform.localPosition += translationVec * speed;
+    public void OnPlayButton()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }

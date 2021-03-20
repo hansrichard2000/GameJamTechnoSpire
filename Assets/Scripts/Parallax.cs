@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-    /*private float length, startpos;
+    private float length, startpos;
     public GameObject cam;
     public float parallaxEffect;
 
@@ -22,42 +22,43 @@ public class Parallax : MonoBehaviour
 
         transform.position = new Vector3(startpos - dist, transform.position.y, transform.position.z);
 
-        if(temp > startpos + length)
+        if (temp > startpos + length)
         {
             startpos += length;
-            
-        }else if(temp < startpos - length)
+
+        }
+        else if (temp < startpos - length)
         {
             startpos -= length;
         }
 
-    }*/
-
-
-    float speed = 0.020f;
-    float batasKiri = -23.42f;
-    float batasKanan = 52.84f;
-    Vector3 translationVec;
-    // Start is called before the first frame update
-    void Start()
-    {
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        //float temp = (cam.transform.position.x * (1 - parallaxEffect));
-        //float dist = (cam.transform.position.x * parallaxEffect);
 
-        //transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
-        if (transform.localPosition.x <= batasKiri)
+    /*    float speed = 0.020f;
+        float batasKiri = -23.42f;
+        float batasKanan = 52.84f;
+        Vector3 translationVec;
+        // Start is called before the first frame update
+        void Start()
         {
-            transform.localPosition = new Vector3(batasKanan, transform.localPosition.y, transform.localPosition.z);
         }
 
+        // Update is called once per frame
+        void FixedUpdate()
+        {
+            //float temp = (cam.transform.position.x * (1 - parallaxEffect));
+            //float dist = (cam.transform.position.x * parallaxEffect);
 
-        translationVec = new Vector3(-3, 0, 0);
+            //transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
+            if (transform.localPosition.x <= batasKiri)
+            {
+                transform.localPosition = new Vector3(batasKanan, transform.localPosition.y, transform.localPosition.z);
+            }
 
-        transform.localPosition += translationVec * speed;
-    }
+
+            translationVec = new Vector3(-3, 0, 0);
+
+            transform.localPosition += translationVec * speed;
+        }*/
 }
