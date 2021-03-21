@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerCollision : MonoBehaviour
@@ -24,6 +25,7 @@ public class PlayerCollision : MonoBehaviour
                 /*var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = this.transform.position;*/
                 Destroy(this.gameObject);
+                SceneManager.LoadScene("GameOverScene");
             }
             else
             {
@@ -37,6 +39,7 @@ public class PlayerCollision : MonoBehaviour
                 /*var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = this.transform.position;*/
                 Destroy(this.gameObject);
+                SceneManager.LoadScene("GameOverScene");
             }
             else
             {
@@ -50,6 +53,7 @@ public class PlayerCollision : MonoBehaviour
                 /*var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = this.transform.position;*/
                 Destroy(this.gameObject);
+                SceneManager.LoadScene("GameOverScene");
             }
             else
             {
@@ -63,6 +67,7 @@ public class PlayerCollision : MonoBehaviour
                 /*var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = this.transform.position;*/
                 Destroy(this.gameObject);
+                SceneManager.LoadScene("GameOverScene");
 
             }
             else

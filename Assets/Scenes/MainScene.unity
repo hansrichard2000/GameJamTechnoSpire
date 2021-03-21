@@ -2724,7 +2724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 519420028}
-  parallaxEffect: 0.3
+  parallaxEffect: 0.5
 --- !u!198 &1956205644 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6264939330861204292, guid: bb333e3472742b442af709cae1425edc,
@@ -2895,7 +2895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxEffect: 1
 --- !u!1 &2078625061
 GameObject:
   m_ObjectHideFlags: 0

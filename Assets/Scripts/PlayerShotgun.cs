@@ -69,13 +69,14 @@ public class PlayerShotgun : MonoBehaviour
                 switch (i)
                 {
                     case 0:
-                        spawnedBullet.AddForce(barrel.up * bullet_speed + new Vector3(300f, -90f, 0f));
+                        spawnedBullet.AddForce(new Vector2(300f, -90f));
+                        //spawnedBullet.AddForce(barrel.up * bullet_speed + new Vector3(300f, -90f, 0f));
                         break;
                     case 1:
-                        spawnedBullet.AddForce(barrel.up * bullet_speed + new Vector3(300f, 0f, 0f));
+                        spawnedBullet.AddForce(new Vector2(300f, 0f));
                         break;
                     case 2:
-                        spawnedBullet.AddForce(barrel.up * bullet_speed + new Vector3(300f, 90f, 0f));
+                        spawnedBullet.AddForce(new Vector2(300f, 90f));
                         break;
                 }
                 //spawnedBullet.GetComponent<Jarum>().TembakDari(firePoint, translationVec);
