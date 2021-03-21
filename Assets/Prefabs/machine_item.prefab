@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3215449458684118512}
   m_Layer: 8
   m_Name: machine_item
-  m_TagString: ItemShotgun
+  m_TagString: ItemHealth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

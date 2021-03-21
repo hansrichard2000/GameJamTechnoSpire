@@ -12,6 +12,7 @@ TagManager:
   - BatasKanan
   - ItemShotgun
   - ItemThrower
+  - ItemHealth
   layers:
   - Default
   - TransparentFX

@@ -8,15 +8,21 @@ using UnityEngine.UI;
 public class PlayerCollision : MonoBehaviour
 {
     public GameObject prefabExplosion;
-    int life = 10;
+    public GameObject lifesys;
     public Text textlife;
     public ScoringSystem scoringSystem;
-
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        textlife.text = "" + life;
+        textlife.text = "" + lifesys.GetComponent<LifeSystem>().life;
+        print(lifesys.GetComponent<LifeSystem>().life);
+    }
+
+    private void Update()
+    {
+        textlife.text = "" + lifesys.GetComponent<LifeSystem>().life;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -24,7 +30,7 @@ public class PlayerCollision : MonoBehaviour
         Vector3 translationvec = new Vector3(collision.collider.transform.position.x, collision.collider.transform.position.y, 0);
         if (collision.collider.tag == "Virus1")
         {
-            if(life == 0)
+            if(lifesys.GetComponent<LifeSystem>().life == 0)
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
@@ -35,12 +41,12 @@ public class PlayerCollision : MonoBehaviour
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
-                life -= 1;
+                lifesys.GetComponent<LifeSystem>().life -= 1;
             }
         }
         if (collision.collider.tag == "Virus2")
         {
-            if (life == 0)
+            if (lifesys.GetComponent<LifeSystem>().life == 0)
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
@@ -51,12 +57,12 @@ public class PlayerCollision : MonoBehaviour
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
-                life -= 1;
+                lifesys.GetComponent<LifeSystem>().life -= 1;
             }
         }
         if (collision.collider.tag == "Virus3")
         {
-            if (life == 0)
+            if (lifesys.GetComponent<LifeSystem>().life == 0)
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
@@ -67,12 +73,12 @@ public class PlayerCollision : MonoBehaviour
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
-                life -= 1;
+                lifesys.GetComponent<LifeSystem>().life -= 1;
             }
         }
         if (collision.collider.tag == "Vbullet")
         {
-            if (life == 0)
+            if (lifesys.GetComponent<LifeSystem>().life == 0)
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
@@ -84,10 +90,10 @@ public class PlayerCollision : MonoBehaviour
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
-                life -= 1;
+                lifesys.GetComponent<LifeSystem>().life -= 1;
             }
         }
-        textlife.text = "" + life;
+        textlife.text = "" + lifesys.GetComponent<LifeSystem>().life;
     }
 
     public void GameOver()
