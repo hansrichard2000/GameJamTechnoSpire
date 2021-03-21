@@ -19,7 +19,6 @@ public class BulletDestroy : MonoBehaviour
             /*var explosion = Instantiate(prefabExplosion);
             explosion.transform.position = this.transform.position;*/
             Destroy(this.gameObject);
-            Destroy(collision.collider.gameObject);
             scoringSystem.AddScore(10);
         }
         if (collision.collider.tag == "Virus2")
@@ -27,7 +26,6 @@ public class BulletDestroy : MonoBehaviour
             /*var explosion = Instantiate(prefabExplosion);
             explosion.transform.position = this.transform.position;*/
             Destroy(this.gameObject);
-            Destroy(collision.collider.gameObject);
             scoringSystem.AddScore(10);
         }
         if (collision.collider.tag == "Virus3")
@@ -35,7 +33,6 @@ public class BulletDestroy : MonoBehaviour
             /*var explosion = Instantiate(prefabExplosion);
             explosion.transform.position = this.transform.position;*/
             Destroy(this.gameObject);
-            Destroy(collision.collider.gameObject);
             scoringSystem.AddScore(10);
         }
     }

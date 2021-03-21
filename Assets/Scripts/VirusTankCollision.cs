@@ -5,16 +5,14 @@ using UnityEngine;
 public class VirusTankCollision : MonoBehaviour
 {
     public GameObject prefabExplosion;
-    public AudioSource death;
     public int life = 3;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Player")
         {
-            if(life == 0)
+            if(life < 1)
             {
-                death.Play();
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = this.transform.position;
                 Destroy(this.gameObject);
@@ -28,9 +26,8 @@ public class VirusTankCollision : MonoBehaviour
         }
         if (collision.collider.tag == "Bullet")
         {
-            if(life == 0)
+            if(life < 1)
             {
-                death.Play();
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = this.transform.position;
 

@@ -33,6 +33,7 @@ public class PlayerChangeDefault : MonoBehaviour
         if (collision.collider.tag == "ItemHealth")
         {
             lifesys.GetComponent<LifeSystem>().life += 1;
+
         }
     }
 }

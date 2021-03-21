@@ -139,8 +139,8 @@ GameObject:
   - component: {fileID: 2074930969531131104}
   - component: {fileID: -9010386347990833303}
   - component: {fileID: 2182474679750410930}
-  - component: {fileID: -7885353735605111208}
   - component: {fileID: 8853901336512127263}
+  - component: {fileID: 3204822247550587957}
   m_Layer: 0
   m_Name: virus3_fix
   m_TagString: Virus3
@@ -244,21 +244,6 @@ CapsuleCollider2D:
   m_Offset: {x: -1, y: -0.92}
   m_Size: {x: 49.64, y: 50.8}
   m_Direction: 0
---- !u!114 &-7885353735605111208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5321776941587509986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75e46ab1ec95f7c48bb5d14c66a8494c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabExplosion: {fileID: 6743814365635852008, guid: 36a75a8a56fe85041917eeafca3e5693,
-    type: 3}
-  death: {fileID: 3939172223233163945}
 --- !u!95 &8853901336512127263
 Animator:
   serializedVersion: 3
@@ -278,3 +263,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3204822247550587957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5321776941587509986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397053995d193684cae0211d03693e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabExplosion: {fileID: 6743814365635852008, guid: 36a75a8a56fe85041917eeafca3e5693,
+    type: 3}
+  death: {fileID: 0}
+  life: 3

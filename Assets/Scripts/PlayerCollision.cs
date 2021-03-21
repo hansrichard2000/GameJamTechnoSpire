@@ -30,7 +30,7 @@ public class PlayerCollision : MonoBehaviour
         Vector3 translationvec = new Vector3(collision.collider.transform.position.x, collision.collider.transform.position.y, 0);
         if (collision.collider.tag == "Virus1")
         {
-            if(lifesys.GetComponent<LifeSystem>().life == 0)
+            if(lifesys.GetComponent<LifeSystem>().life < 1)
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
@@ -46,7 +46,7 @@ public class PlayerCollision : MonoBehaviour
         }
         if (collision.collider.tag == "Virus2")
         {
-            if (lifesys.GetComponent<LifeSystem>().life == 0)
+            if (lifesys.GetComponent<LifeSystem>().life < 1)
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
@@ -62,7 +62,7 @@ public class PlayerCollision : MonoBehaviour
         }
         if (collision.collider.tag == "Virus3")
         {
-            if (lifesys.GetComponent<LifeSystem>().life == 0)
+            if (lifesys.GetComponent<LifeSystem>().life < 1)
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
@@ -78,7 +78,7 @@ public class PlayerCollision : MonoBehaviour
         }
         if (collision.collider.tag == "Vbullet")
         {
-            if (lifesys.GetComponent<LifeSystem>().life == 0)
+            if (lifesys.GetComponent<LifeSystem>().life < 1)
             {
                 var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = translationvec;
