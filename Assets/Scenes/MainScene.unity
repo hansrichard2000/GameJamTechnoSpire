@@ -919,7 +919,7 @@ MonoBehaviour:
   - {fileID: 1448967996}
   - {fileID: 873832732}
   bubble:
-  - {fileID: 3083789133701762014, guid: 9ed904dd60bd1ed49b7551e46c805384, type: 3}
+  - {fileID: 2995735050738190169, guid: cc13eab833b127249b2d159c2bd8bb0b, type: 3}
   - {fileID: 1591053322758482113, guid: 59df63c4496a1db4ab6cda107fa367be, type: 3}
   - {fileID: 856031066454592819, guid: f7e85d2d7b80a3747a489adaa19c00d3, type: 3}
 --- !u!1 &491201273
