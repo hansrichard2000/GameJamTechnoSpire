@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public ScoringSystem scoringSystem;
     public Animator animator;
     public ParticleSystem particleSystem;
+    public AudioSource bang;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
             peluruBaru.GetComponent<BulletMove>().TembakDari(firePoint, translationVec);
             peluruBaru.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
 
+            bang.Play();
         }
         
     }

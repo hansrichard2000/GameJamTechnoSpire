@@ -5,6 +5,7 @@ using UnityEngine;
 public class SoundSystem : MonoBehaviour
 {
     private static SoundSystem sound;
+    
 
     // Start is called before the first frame update
     void Awake()
@@ -19,4 +20,5 @@ public class SoundSystem : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
 }

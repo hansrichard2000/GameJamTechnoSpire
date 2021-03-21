@@ -14,6 +14,7 @@ public class PlayerShotgun : MonoBehaviour
     public ScoringSystem scoringSystem;
     public Animator animator;
     public ParticleSystem particleSystem;
+    public AudioSource shotgun;
 
     [SerializeField]
     private Transform barrel;
@@ -82,6 +83,8 @@ public class PlayerShotgun : MonoBehaviour
                 //spawnedBullet.GetComponent<Jarum>().TembakDari(firePoint, translationVec);
                 spawnedBullet.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
             }
+
+            shotgun.Play();
 
             //Tembak
             //Buat pelurunya
