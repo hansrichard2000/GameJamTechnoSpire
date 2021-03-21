@@ -138,10 +138,15 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1587942068063503039, guid: bb333e3472742b442af709cae1425edc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3738077153271710753, guid: bb333e3472742b442af709cae1425edc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.28
+      value: -5.22
       objectReference: {fileID: 0}
     - target: {fileID: 3738077153271710753, guid: bb333e3472742b442af709cae1425edc,
         type: 3}
@@ -939,6 +944,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1033,6 +1039,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3778ed5ba0aa6414aacde7ece7246d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerUI:
+  - {fileID: 788658067}
+  - {fileID: 303086330}
+  - {fileID: 1323894448}
 --- !u!1 &593720366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,6 +1257,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &788658067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4325267112804882053, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
+    type: 3}
+  m_PrefabInstance: {fileID: 893737414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &803474346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,12 +2105,12 @@ PrefabInstance:
     - target: {fileID: 6191927108407552350, guid: e0626d78f8748bc4cb7272363bfc23ea,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8072690642480721856, guid: e0626d78f8748bc4cb7272363bfc23ea,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.74
+      value: -5.23
       objectReference: {fileID: 0}
     - target: {fileID: 8072690642480721856, guid: e0626d78f8748bc4cb7272363bfc23ea,
         type: 3}
