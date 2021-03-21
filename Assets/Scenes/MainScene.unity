@@ -595,10 +595,10 @@ RectTransform:
   m_Father: {fileID: 119048003}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1772005, y: 0.7971333}
-  m_AnchorMax: {x: 0.22039856, y: 0.86353326}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.082398556, y: 0.88000005}
+  m_AnchorMax: {x: 0.12679952, y: 0.9482667}
+  m_AnchoredPosition: {x: -0.5, y: 0.5}
+  m_SizeDelta: {x: -1, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &212739943
 MonoBehaviour:
@@ -629,7 +629,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 4
 --- !u!222 &212739944
@@ -2828,10 +2828,10 @@ RectTransform:
   m_Father: {fileID: 119048003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.13640097, y: 0.78639996}
-  m_AnchorMax: {x: 0.22519808, y: 0.8692667}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.04039616, y: 0.8692667}
+  m_AnchorMax: {x: 0.13279952, y: 0.957}
+  m_AnchoredPosition: {x: -0.5, y: 0}
+  m_SizeDelta: {x: -3, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1599365035
 MonoBehaviour:
@@ -2901,10 +2901,10 @@ RectTransform:
   m_Father: {fileID: 119048003}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.32720047, y: 0.78639996}
-  m_AnchorMax: {x: 0.5372005, y: 0.8692667}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.23359905, y: 0.8692667}
+  m_AnchorMax: {x: 0.4423986, y: 0.957}
+  m_AnchoredPosition: {x: -0.5, y: 0}
+  m_SizeDelta: {x: 1, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1617110089
 MonoBehaviour:
@@ -3437,10 +3437,10 @@ RectTransform:
   m_Father: {fileID: 119048003}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3355991, y: 0.7927999}
-  m_AnchorMax: {x: 0.5276015, y: 0.85913336}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.24079953, y: 0.8692667}
+  m_AnchorMax: {x: 0.43400002, y: 0.9482667}
+  m_AnchoredPosition: {x: -0.5, y: 1}
+  m_SizeDelta: {x: -1, y: -6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1883500063
 MonoBehaviour:
@@ -3471,7 +3471,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'Score :  0'
 --- !u!222 &1883500064
