@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 6589925214074232986}
   - component: {fileID: 8623583407056784851}
   - component: {fileID: 2392842072815751040}
-  m_Layer: 0
+  - component: {fileID: 3215449458684118512}
+  m_Layer: 8
   m_Name: machine_item
   m_TagString: ItemShotgun
   m_Icon: {fileID: 0}
@@ -120,3 +121,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3215449458684118512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083789133701762014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab24b3d77982c5a4cbb9ffa4c6cea060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ParticleDestroyer : MonoBehaviour
 {
-    public float timer = 3f;
+    public float timer = 1f;
 
     // Update is called once per frame
     void Update()
     {
-        timer -= timer -= Time.deltaTime;
+        timer -= Time.deltaTime;
 
-        if (timer == 0)
+        if (timer == 0f)
         {
             Destroy(this.gameObject);
         }

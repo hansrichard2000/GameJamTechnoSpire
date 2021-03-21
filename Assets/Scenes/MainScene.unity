@@ -143,6 +143,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1587942068063503039, guid: bb333e3472742b442af709cae1425edc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3738077153271710753, guid: bb333e3472742b442af709cae1425edc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -198,6 +203,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6129944934255699416, guid: bb333e3472742b442af709cae1425edc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6264939330687931497, guid: bb333e3472742b442af709cae1425edc,
         type: 3}
       propertyPath: particleSystem
@@ -230,6 +240,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7123789818523418871, guid: c4e027f8bea24864aa42e8c5bea3131a,
         type: 3}
+    - target: {fileID: 6264939330820234104, guid: bb333e3472742b442af709cae1425edc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264939330861204345, guid: bb333e3472742b442af709cae1425edc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123917170811581596, guid: bb333e3472742b442af709cae1425edc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738529193071193013, guid: bb333e3472742b442af709cae1425edc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6264939330687931497, guid: bb333e3472742b442af709cae1425edc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb333e3472742b442af709cae1425edc, type: 3}
@@ -842,7 +872,7 @@ GameObject:
   m_Component:
   - component: {fileID: 476048286}
   - component: {fileID: 476048287}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BubbleSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1150,7 +1180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 545791438}
   - component: {fileID: 545791437}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1400,7 +1430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 657152554}
   - component: {fileID: 657152553}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1798,7 +1828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 873832733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1903,6 +1933,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 519420032}
     m_Modifications:
+    - target: {fileID: 1577144711832254754, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1868921541941170203, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1973,6 +2008,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4325267112804882053, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713905608297201551, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5247489114697015462, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 9006748733118742604, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
         type: 3}
       propertyPath: textlife
@@ -2004,6 +2054,11 @@ PrefabInstance:
       propertyPath: bang
       value: 
       objectReference: {fileID: 545791437}
+    - target: {fileID: 9006748733221771075, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 9006748733221771134, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
         type: 3}
       propertyPath: InitialModule.startColor.maxGradient.ctime1
@@ -2058,6 +2113,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startColor.maxGradient.ctime0
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9006748733262581570, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f07104d9dafe2c4e8c5b58e427e9915, type: 3}
@@ -2169,7 +2229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1025303893}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2427,7 +2487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1448967997}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2614,6 +2674,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 519420032}
     m_Modifications:
+    - target: {fileID: 170682619801419136, guid: e0626d78f8748bc4cb7272363bfc23ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1519451552638205832, guid: e0626d78f8748bc4cb7272363bfc23ea,
         type: 3}
       propertyPath: particleSystem
@@ -2640,6 +2705,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7123789818523418871, guid: c4e027f8bea24864aa42e8c5bea3131a,
         type: 3}
+    - target: {fileID: 1519451552790917273, guid: e0626d78f8748bc4cb7272363bfc23ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519451552802564248, guid: e0626d78f8748bc4cb7272363bfc23ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2394394308039597949, guid: e0626d78f8748bc4cb7272363bfc23ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919286175050154068, guid: e0626d78f8748bc4cb7272363bfc23ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5023400179459957856, guid: e0626d78f8748bc4cb7272363bfc23ea,
         type: 3}
       propertyPath: m_SortingOrder
@@ -2659,6 +2744,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6191927108407552350, guid: e0626d78f8748bc4cb7272363bfc23ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8072690642480721856, guid: e0626d78f8748bc4cb7272363bfc23ea,
         type: 3}
@@ -2902,7 +2992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1759144376}
   - component: {fileID: 1759144375}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}

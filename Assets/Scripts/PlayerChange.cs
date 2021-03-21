@@ -12,8 +12,8 @@ public class PlayerChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-        if (timer == 0)
+        timer += Time.deltaTime;
+        if (timer == 5.0f)
         {
             playerUI[0].SetActive(true);
             playerUI[1].SetActive(false);
@@ -30,7 +30,6 @@ public class PlayerChange : MonoBehaviour
             playerUI[1].SetActive(true);
             playerUI[2].SetActive(false);
             Destroy(collision.collider.gameObject);
-            timer = 5f;
         }
 
         if (collision.collider.tag == "ItemThrower")
@@ -39,7 +38,6 @@ public class PlayerChange : MonoBehaviour
             playerUI[1].SetActive(false);
             playerUI[2].SetActive(true);
             Destroy(collision.collider.gameObject);
-            timer = 5f;
         }
     }
 }
