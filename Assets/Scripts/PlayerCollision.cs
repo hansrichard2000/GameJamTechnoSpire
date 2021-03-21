@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +10,7 @@ public class PlayerCollision : MonoBehaviour
     public GameObject prefabExplosion;
     int life = 3;
     public Text textlife;
+    public ScoringSystem scoringSystem;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,7 @@ public class PlayerCollision : MonoBehaviour
                 /*var explosion = Instantiate(prefabExplosion);
                 explosion.transform.position = this.transform.position;*/
                 Destroy(this.gameObject);
-                SceneManager.LoadScene("GameOverScene");
+                GameOver();
             }
             else
             {
@@ -76,5 +78,11 @@ public class PlayerCollision : MonoBehaviour
             }
         }
         textlife.text = "" + life;
+    }
+
+    public void GameOver()
+    {
+        PlayerPrefs.SetInt("MyScore", scoringSystem.score);
+        SceneManager.LoadScene("GameOverScene");
     }
 }

@@ -219,6 +219,11 @@ PrefabInstance:
       propertyPath: textlife
       value: 
       objectReference: {fileID: 212739943}
+    - target: {fileID: 6264939330687931510, guid: bb333e3472742b442af709cae1425edc,
+        type: 3}
+      propertyPath: scoringSystem
+      value: 
+      objectReference: {fileID: 593720367}
     m_RemovedComponents:
     - {fileID: 6264939330687931497, guid: bb333e3472742b442af709cae1425edc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb333e3472742b442af709cae1425edc, type: 3}
@@ -1141,6 +1146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life_text: {fileID: 212739943}
   score_text: {fileID: 1883500063}
+  life: 0
+  score: 0
 --- !u!4 &593720368
 Transform:
   m_ObjectHideFlags: 0
@@ -1675,6 +1682,11 @@ PrefabInstance:
       propertyPath: textlife
       value: 
       objectReference: {fileID: 212739943}
+    - target: {fileID: 9006748733118742604, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
+        type: 3}
+      propertyPath: scoringSystem
+      value: 
+      objectReference: {fileID: 593720367}
     - target: {fileID: 9006748733118742611, guid: 0f07104d9dafe2c4e8c5b58e427e9915,
         type: 3}
       propertyPath: scoringSystem
@@ -2228,6 +2240,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 161688558}
     - target: {fileID: 1519451552638205832, guid: e0626d78f8748bc4cb7272363bfc23ea,
+        type: 3}
+      propertyPath: scoringSystem
+      value: 
+      objectReference: {fileID: 593720367}
+    - target: {fileID: 1519451552638205847, guid: e0626d78f8748bc4cb7272363bfc23ea,
+        type: 3}
+      propertyPath: textlife
+      value: 
+      objectReference: {fileID: 212739943}
+    - target: {fileID: 1519451552638205847, guid: e0626d78f8748bc4cb7272363bfc23ea,
         type: 3}
       propertyPath: scoringSystem
       value: 
