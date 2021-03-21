@@ -87,9 +87,9 @@ public class SpawnEnemy : MonoBehaviour
                 spawnVirus(virus[0], new Vector3(8f, 2.7f, 0f));
                 // spawn virus 2
                 spawnVirus(virus[1], new Vector3(4.5f, 3.85f, 0f));
-                spawnVirus(virus[1], new Vector3(7.5f, 3.85f, 0f));
+                spawnVirus(virus[1], new Vector3(6.5f, 3.85f, 0f));
                 spawnVirus(virus[1], new Vector3(4.5f, -3.85f, 0f));
-                spawnVirus(virus[1], new Vector3(7.5f, -3.85f, 0f));
+                spawnVirus(virus[1], new Vector3(6.5f, -3.85f, 0f));
                 // spawn virus 3
                 spawnVirus(virus[2], new Vector3(8, 0, 0));
                 break;
@@ -103,10 +103,10 @@ public class SpawnEnemy : MonoBehaviour
                 // spawn virus 2
                 spawnVirus(virus[1], new Vector3(4.85f, 1f, 0));
                 spawnVirus(virus[1], new Vector3(4.85f, -1f, 0));
-                spawnVirus(virus[1], new Vector3(6.5f, 3.5f, 0));
-                spawnVirus(virus[1], new Vector3(6.5f, -3.5f, 0));
-                spawnVirus(virus[1], new Vector3(7.5f, 1f, 0));
-                spawnVirus(virus[1], new Vector3(7.5f, -1f, 0));
+                spawnVirus(virus[1], new Vector3(5.5f, 3.5f, 0));
+                spawnVirus(virus[1], new Vector3(5.5f, -3.5f, 0));
+                spawnVirus(virus[1], new Vector3(6.5f, 1f, 0));
+                spawnVirus(virus[1], new Vector3(6.5f, -1f, 0));
                 // spawn virus 3
                 spawnVirus(virus[2], new Vector3(3.5f, 0, 0));
                 spawnVirus(virus[2], new Vector3(5f, 3f, 0));
