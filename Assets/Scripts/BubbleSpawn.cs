@@ -31,6 +31,7 @@ public class BubbleSpawn : MonoBehaviour
             timer = 0;
             random_bubble = Random.Range(0, 3);
             random_spot = Random.Range(0, 3);
+            print("Bubble " + random_bubble + " spawned at spot " + random_spot);
             //print(random + 2);
             var bubble_baru = Instantiate(bubble[random_bubble]);
             bubble_baru.transform.position = new Vector3(spot[random_spot].transform.position.x,
