@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8697219654226567699}
   - component: {fileID: 1380632517453734623}
   - component: {fileID: 6748842793538743711}
+  - component: {fileID: -1497720515371745050}
   m_Layer: 0
   m_Name: Bleeding
   m_TagString: Untagged
@@ -4812,3 +4813,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-1497720515371745050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123789818523418871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4e0052fa0d1cf48b23fe24245fde96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3

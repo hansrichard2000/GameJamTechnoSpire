@@ -10,6 +10,8 @@ TagManager:
   - Bullet
   - Vbullet
   - BatasKanan
+  - ItemShotgun
+  - ItemThrower
   layers:
   - Default
   - TransparentFX

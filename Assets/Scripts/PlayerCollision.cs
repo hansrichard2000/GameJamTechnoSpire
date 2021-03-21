@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PlayerCollision : MonoBehaviour
 {
     public GameObject prefabExplosion;
-    int life = 3;
+    int life = 10;
     public Text textlife;
     public ScoringSystem scoringSystem;
 
