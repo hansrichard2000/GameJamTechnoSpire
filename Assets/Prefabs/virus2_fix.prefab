@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabExplosion: {fileID: 6743814365635852008, guid: 36a75a8a56fe85041917eeafca3e5693,
     type: 3}
-  deathSound: {fileID: 5657838399697499614}
+  death: {fileID: 5657838399697499614}
 --- !u!95 &6634457350584905073
 Animator:
   serializedVersion: 3
@@ -241,7 +241,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7196f142e7f3fb94f8b0a15a22af72f9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.742
   m_Pitch: 1
   Loop: 0
   Mute: 0

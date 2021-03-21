@@ -5,7 +5,7 @@ using UnityEngine;
 public class VirusCollision : MonoBehaviour
 {
     public GameObject prefabExplosion;
-    public AudioSource deathSound;
+    public AudioSource death;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,18 +16,19 @@ public class VirusCollision : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
+            death.Play();
             var explosion = Instantiate(prefabExplosion);
             explosion.transform.position = this.transform.position;
-            deathSound.Play();
             Destroy(this.gameObject);
             print("player Collided");
 
         }
         if (collision.collider.tag == "Bullet")
         {
+            death.Play();
             var explosion = Instantiate(prefabExplosion);
             explosion.transform.position = this.transform.position;
-            deathSound.Play();
+            
             Destroy(this.gameObject);
             Destroy(collision.collider.gameObject);
 
