@@ -55,16 +55,36 @@ public class PlayerThrower : MonoBehaviour
         {
             //Tembak
             //Buat pelurunya
-            var peluruBaru = Instantiate(prefabPeluru);
+            //var peluruBaru = Instantiate(prefabPeluru);
 
             //set awal dan arah dari peluru
-            peluruBaru.GetComponent<BulletMove>().TembakDari(firePoint, translationVec);
-            peluruBaru.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
+            //peluruBaru.GetComponent<BulletMove>().TembakDari(firePoint, translationVec);
+            //peluruBaru.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
 
-            if (!flame.isPlaying)
-            {
-                flame.Play();
-            }
+            //            if (!flame.isPlaying)
+            //          {
+            //            flame.Play();
+            //      }
+            Shoot();
+        }
+    }
+    public void Jump()
+    {
+        speed = 0.075f;
+        animator.SetBool("Jump", true);
+    }
+
+    public void Shoot()
+    {
+        var peluruBaru = Instantiate(prefabPeluru);
+
+        //set awal dan arah dari peluru
+        peluruBaru.GetComponent<BulletMove>().TembakDari(firePoint, translationVec);
+        peluruBaru.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
+
+        if (!flame.isPlaying)
+        {
+            flame.Play();
         }
     }
 }

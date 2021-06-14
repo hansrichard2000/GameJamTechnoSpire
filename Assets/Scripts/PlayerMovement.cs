@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            /*
             //Tembak
             //Buat pelurunya
             var peluruBaru = Instantiate(prefabPeluru);
@@ -61,7 +62,25 @@ public class PlayerMovement : MonoBehaviour
             peluruBaru.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
 
             bang.Play();
+            */
+            Shoot();
         }
         
+    }
+    public void Jump()
+    {
+        speed = 0.075f;
+        animator.SetBool("Jump", true);
+    }
+
+    public void Shoot()
+    {
+        var peluruBaru = Instantiate(prefabPeluru);
+
+        //set awal dan arah dari peluru
+        peluruBaru.GetComponent<BulletMove>().TembakDari(firePoint, translationVec);
+        peluruBaru.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
+
+        bang.Play();
     }
 }

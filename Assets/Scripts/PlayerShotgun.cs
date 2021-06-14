@@ -62,6 +62,7 @@ public class PlayerShotgun : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            /*
             bullet_speed = 100f;
             for (int i = 0; i <= 2; i++)
             {
@@ -83,16 +84,50 @@ public class PlayerShotgun : MonoBehaviour
                 //spawnedBullet.GetComponent<Jarum>().TembakDari(firePoint, translationVec);
                 spawnedBullet.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
             }
+            */
 
-            shotgun.Play();
+            //shotgun.Play();
 
             //Tembak
             //Buat pelurunya
 
             //set awal dan arah dari peluru
-            
+
+            Shoot();
 
         }
 
+    }
+    public void Jump()
+    {
+        speed = 0.075f;
+        animator.SetBool("Jump", true);
+    }
+
+    public void Shoot()
+    {
+        bullet_speed = 100f;
+        for (int i = 0; i <= 2; i++)
+        {
+            var spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
+
+            switch (i)
+            {
+                case 0:
+                    spawnedBullet.AddForce(new Vector2(300f, -90f));
+                    //spawnedBullet.AddForce(barrel.up * bullet_speed + new Vector3(300f, -90f, 0f));
+                    break;
+                case 1:
+                    spawnedBullet.AddForce(new Vector2(300f, 0f));
+                    break;
+                case 2:
+                    spawnedBullet.AddForce(new Vector2(300f, 90f));
+                    break;
+            }
+            //spawnedBullet.GetComponent<Jarum>().TembakDari(firePoint, translationVec);
+            spawnedBullet.GetComponent<BulletDestroy>().scoringSystem = scoringSystem;
+        }
+
+        shotgun.Play();
     }
 }
