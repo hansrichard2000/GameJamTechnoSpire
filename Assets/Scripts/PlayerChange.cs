@@ -16,19 +16,24 @@ public class PlayerChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= 15.0f)
+        if (gameObject.activeSelf)
         {
-            timer = 0;
-            playerUI[0].SetActive(true);
-            playerUI[1].SetActive(false);
-            playerUI[2].SetActive(false);
-            ButtonUI[0].gameObject.SetActive(true);
-            ButtonUI[1].gameObject.SetActive(false);
-            ButtonUI[2].gameObject.SetActive(false);
-            timer = 0;
+            print(gameObject.name);
+            timer += Time.deltaTime;
+            if (timer >= 15.0f)
+            {
+                timer = 0;
+                playerUI[0].SetActive(true);
+                playerUI[1].SetActive(false);
+                playerUI[2].SetActive(false);
+                ButtonUI[0].gameObject.SetActive(true);
+                ButtonUI[1].gameObject.SetActive(false);
+                ButtonUI[2].gameObject.SetActive(false);
+                timer = 0;
+            }
+            print(ButtonUI[0].gameObject.name);
         }
-        print(ButtonUI[0].gameObject.name);
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
