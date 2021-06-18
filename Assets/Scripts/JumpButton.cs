@@ -7,7 +7,12 @@ public class JumpButton : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 {
     public bool isPressed;
     public GameObject playerMachineGun;
-    public PlayerMovement playerMovement;
+    public GameObject playerThrower;
+    public GameObject playerShotgun;
+    public ParticleSystem particleSystem;
+/*    public PlayerMovement playerMovement;
+    public PlayerMovement playerMoveShotgun;
+    public PlayerMovement playerMoveThrower;*/
 
     // Start is called before the first frame update
     void Update()
@@ -15,7 +20,19 @@ public class JumpButton : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
         print("ooit");
         if (isPressed)
         {
-            playerMachineGun.GetComponent<PlayerMovement>().Jump();
+            if (playerMachineGun.active)
+            {
+                playerMachineGun.GetComponent<PlayerMovement>().Jump();
+                //particleSystem.Play();
+            }else if (playerShotgun.active)
+            {
+                playerShotgun.GetComponent<PlayerShotgun>().Jump();
+            }else if (playerThrower.active)
+            {
+                playerThrower.GetComponent<PlayerThrower>().Jump();
+            }
+            
+
         }
     }
     public void OnPointerDown(PointerEventData data)
