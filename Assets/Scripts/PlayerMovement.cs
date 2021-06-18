@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        particleSystem.Stop();
+        //particleSystem.Stop();
     }
 
     // Update is called once per frame
@@ -28,11 +28,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow)){
                 speed = 0.075f;
             animator.SetBool("Jump", true);
-        }
-        else
-        {
-            //entah kenapa play sama stop nya kebalik, kalau diplay, malah stop
-            particleSystem.Play();
         }
         
         translationVec = new Vector3(0, 1, 0);
