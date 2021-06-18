@@ -71,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
     {
         speed = 0.075f;
         animator.SetBool("Jump", true);
+        print("lompat");
     }
 
     public void Shoot()
