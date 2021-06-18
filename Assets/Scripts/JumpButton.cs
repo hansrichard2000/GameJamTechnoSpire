@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class JumpButton : MonoBehaviour,IUpdateSelectedHandler,IPointerDownHandler,IPointerUpHandler
+public class JumpButton : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 {
     public bool isPressed;
     public GameObject playerMachineGun;
     public PlayerMovement playerMovement;
 
     // Start is called before the first frame update
-    public void OnUpdateSelected(BaseEventData data)
+    void Update()
     {
         print("ooit");
         if (isPressed)
